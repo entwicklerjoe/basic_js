@@ -35,4 +35,4 @@ function funnyFunction() {
         result == myLocalScope + "x need you practice!"
     document.write(result);
     };
-}
+};
