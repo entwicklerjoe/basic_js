@@ -44,4 +44,5 @@ function addCash(paid) {
     cash = cash + paid;
 }
 addCash(450);
+addCash(450);
 document.write(cash);
