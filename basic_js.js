@@ -36,3 +36,12 @@ function funnyFunction() {
     document.write(result);
     };
 };
+
+/* Functions without return statement */
+let cash = 450;
+
+function addCash(paid) {
+    cash = cash + paid;
+}
+addCash(450);
+document.write(cash);
