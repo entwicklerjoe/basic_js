@@ -42,7 +42,7 @@ function checkObj(object, property) {
         return "Property not found";
     }
 };
-// document.write(checkObj(carObj, "ps"));
+document.write(checkObj(carObj, "ps"));
 
 /* Global scope & functions */ /* Not working yet... */
 // let mid = 500;
