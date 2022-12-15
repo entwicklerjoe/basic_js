@@ -13,22 +13,36 @@ nameArray.unshift("Johnny");
 // document.write(nameArray);
 
 /* Object manipulating */
-const myCar = "type";
+const myCar = "type";  // value access
 const carIn = carObj[myCar];
 // document.write(carIn);
-carObj.cubic = "1.3";
+carObj.cubic = "1.3";  // new prop
 carObj.ps = "69";
 // document.write(carObj.cubic);
-delete carObj.ps;
-const cubicCapacity = "cubic";
+delete carObj.ps;  //delete
+const cubicCapacity = "cubic";  // lookup
 const cubicLookup = carObj[cubicCapacity];
-document.write(cubicLookup);
+// document.write(cubicLookup);
+carObj.hasOwnProperty("type");
+carObj.hasOwnProperty("ps");
+// document.write(carObj.hasOwnProperty("type"));
+// document.write(carObj.hasOwnProperty("ps"));
 
 /* Reusable function */
 function nFunction (p1, p2) {
     return p1 + p2;
 };
 // document.write(nFunction(2, "money"));
+
+/* Check Object Function */
+function checkObj(object, property) {
+    if (object.hasOwnProperty(property)) {
+        return object[property];
+    } else {
+        return "Property not found";
+    }
+};
+// document.write(checkObj(carObj, "ps"));
 
 /* Global scope & functions */ /* Not working yet... */
 // let mid = 500;
@@ -57,3 +71,12 @@ function addCash(paid) {
 }
 addCash(450);
 // document.write(cash);
+
+/* While Loop */
+const counterList = [];
+let i = 50;
+while (i <=50 && i >=0) {
+    counterList.push(i);
+    i--;
+};
+// document.write(counterList);
