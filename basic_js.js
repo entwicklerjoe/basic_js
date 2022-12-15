@@ -92,3 +92,8 @@ for (let i = 10; i >= 0; i -=2) {
     counterBackEven.push(i);
 }
 // document.write(counterBackEven);
+let nameArrayCopy = [];
+for (let i = 0; i < nameArray.length; i++) {
+    nameArrayCopy += nameArray[i];
+}
+// document.write(nameArrayCopy);
