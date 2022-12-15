@@ -42,7 +42,7 @@ function checkObj(object, property) {
         return "Property not found";
     }
 };
-document.write(checkObj(carObj, "ps"));
+// document.write(checkObj(carObj, "ps"));
 
 /* Global scope & functions */ /* Not working yet... */
 // let mid = 500;
@@ -73,10 +73,18 @@ addCash(450);
 // document.write(cash);
 
 /* While Loop */
-const counterList = [];
+const counterWhile = [];
 let i = 50;
 while (i <=50 && i >=0) {
-    counterList.push(i);
+    counterWhile.push(i);
     i--;
 };
 // document.write(counterList);
+
+/* For loop */
+const counterFor = [];
+for (let i = 0; i < 20; i++) {
+    counterFor.push(i);
+    
+}
+document.write(counterFor);
