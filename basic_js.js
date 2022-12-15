@@ -85,6 +85,10 @@ while (i <=50 && i >=0) {
 const counterFor = [];
 for (let i = 0; i < 20; i++) {
     counterFor.push(i);
-    
 }
-document.write(counterFor);
+// document.write(counterFor);
+const counterBackEven = [];
+for (let i = 10; i >= 0; i -=2) {
+    counterBackEven.push(i);
+}
+// document.write(counterBackEven);
