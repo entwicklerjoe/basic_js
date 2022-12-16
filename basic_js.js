@@ -34,6 +34,15 @@ function nFunction (p1, p2) {
 };
 // document.write(nFunction(2, "money"));
 
+/* If...else & switch */
+function addYourCar(obj, prop) {
+    if (obj.length > 10) {
+        obj.pop();
+    } else if (obj.length > 5) {
+        return "This is enough!"
+    } else (obj.length )
+}
+
 /* Check Object Function */
 function checkObj(object, property) {
     if (object.hasOwnProperty(property)) {
@@ -43,26 +52,6 @@ function checkObj(object, property) {
     }
 };
 // document.write(checkObj(carObj, "ps"));
-
-/* Global scope & functions */ /* Not working yet... */
-// let mid = 500;
-// function myLocal() {
-//     heavy = 1000;
-//     easy = 100;
-// };
-// function printOut() {
-//     let result = "";
-//     if (mid === 500) {
-//         result += "Not too heavy" + mid + "kg";
-//     }
-//     if (heavy === 1000) {
-//         result += "It´s too heavy" + heavy + "kg";
-//     }
-//     if (easy === 100) {
-//         result += "Easy" + easy + "kg";
-//     }
-//     return result;
-// };
 
 /* Functions without return statement */
 let cash = 450;
@@ -97,3 +86,4 @@ for (let i = 0; i < nameArray.length; i++) {
     nameArrayCopy += nameArray[i];
 }
 // document.write(nameArrayCopy);
+
