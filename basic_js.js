@@ -35,13 +35,18 @@ function nFunction (p1, p2) {
 // document.write(nFunction(2, "money"));
 
 /* If...else & switch */
-function addYourCar(obj, prop) {
-    if (obj.length > 10) {
-        obj.pop();
-    } else if (obj.length > 5) {
-        return "This is enough!"
-    } else (obj.length )
-}
+function addYourCar(object, property, value) {
+    if (value != "" && property === object.hasOwnProperty(property)) {
+        object[property].push(value);
+    } else if (value != "" && property != object.hasOwnProperty(property)) {
+        object.push(property);
+        object[property].push(value);
+    } else {
+        return "Fatal error!";
+    }
+};
+addYourCar(carObj, type, "Audi");
+document.write(carObj.type);
 
 /* Check Object Function */
 function checkObj(object, property) {
