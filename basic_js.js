@@ -2,7 +2,7 @@
 
 /* Array and object */
 const nameArray = ["Joe", "Ben", "Sarah", "Jennifer"];
-const carObj = {type: "Fiat", model: "500", color: "white"};
+const carObj = { type: "Fiat", model: "500", color: "white" };
 // document.write(carObj.type, carObj.model, carObj.color);
 
 /* Push, shift, unshift and delete */
@@ -29,7 +29,7 @@ carObj.hasOwnProperty("ps");
 // document.write(carObj.hasOwnProperty("ps"));
 
 /* Reusable function */
-function nFunction (p1, p2) {
+function nFunction(p1, p2) {
     return p1 + p2;
 };
 // document.write(nFunction(2, "money"));
@@ -58,7 +58,7 @@ addCash(450);
 /* While Loop */
 const counterWhile = [];
 let i = 50;
-while (i <=50 && i >=0) {
+while (i <= 50 && i >= 0) {
     counterWhile.push(i);
     i--;
 };
@@ -71,7 +71,7 @@ for (let i = 0; i < 20; i++) {
 }
 // document.write(counterFor);
 const counterBackEven = [];
-for (let i = 10; i >= 0; i -=2) {
+for (let i = 10; i >= 0; i -= 2) {
     counterBackEven.push(i);
 }
 // document.write(counterBackEven);
@@ -86,3 +86,15 @@ for (let i = 0; i < testArr.length; i++) {
     total += testArr[i];
 }
 // document.write(total);
+const arr = [[1, 2], [3, 4], [5, 6]];
+function multiplyAll(arr) {
+    let totalArr = 1;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            totalArr *= arr[i][j];
+        }
+    }
+    return totalArr;
+};
+
+document.write(multiplyAll(arr));
