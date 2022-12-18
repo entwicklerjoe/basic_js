@@ -98,3 +98,12 @@ function multiplyAll(arr) {
 };
 
 document.write(multiplyAll(arr));
+
+/* Testing while & for loops */
+const tier = {
+    1: {min: 1, avg: 10, max: 20},
+    2: {min: 21, avg: 30, max: 40},
+    3: {min: 41, avg: 50, max: 60},
+    4: {min: 61, avg: 70, max: 80},
+    5: {min: 81, avg: 90, max: 99}
+};
