@@ -62,7 +62,7 @@ while (i <=50 && i >=0) {
     counterWhile.push(i);
     i--;
 };
-// document.write(counterList);
+// document.write(counterWhile);
 
 /* For loop */
 const counterFor = [];
@@ -80,4 +80,9 @@ for (let i = 0; i < nameArray.length; i++) {
     nameArrayCopy += nameArray[i];
 }
 // document.write(nameArrayCopy);
-
+const testArr = [3, 4, 5, 6, 7, 8];
+let total = 0;
+for (let i = 0; i < testArr.length; i++) {
+    total += testArr[i];
+}
+// document.write(total);
