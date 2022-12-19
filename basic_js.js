@@ -127,6 +127,15 @@ function sum(arr, n) {
   };
 //   document.write(sum(sumArr, 3));
 
+/* Loop & function */
+// const carObj = { type: "Fiat", model: "500", color: "white" };
+// document.write(carObj.hasOwnProperty("type"));
+function addYourCar(property, value) {
+    if (property === carObj.hasOwnProperty(property)) {
+        return "Its good";
+    }
+} 
+document.write(addYourCar(type, "Audi"));
 
 /* Testing while & for loops */
 const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
