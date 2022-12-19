@@ -52,7 +52,7 @@ function checkObj(object, property) {
         return "Property not found";
     }
 };
-// document.write(checkObj(carObj, "ps"));
+// document.write(checkObj(carObj, "type"));
 
 /* Functions without return statement */
 let cash = 450;
@@ -128,14 +128,25 @@ function sum(arr, n) {
 //   document.write(sum(sumArr, 3));
 
 /* Loop & function */
+// function checkObj(object, property) {
+//     if (object.hasOwnProperty(property)) {
+//         return object[property];
+//     } else {
+//         return "Property not found";
+//     }
+// };
 // const carObj = { type: "Fiat", model: "500", color: "white" };
 // document.write(carObj.hasOwnProperty("type"));
-function addYourCar(property, value) {
-    if (property === carObj.hasOwnProperty(property)) {
-        return "Its good";
-    }
-} 
-document.write(addYourCar(type, "Audi"));
+function addYourCar(object, property, value) {
+    if (object.hasOwnProperty(property) && value != "") {
+        document.write("Fun");
+    } else if (object.hasOwnProperty(property) != property && value != "") {
+        document.write("Not fun");
+    } else (value === "" || property === "") 
+        return "Not valid";
+    
+}
+document.write(addYourCar(carObj, "", ""));
 
 /* Testing while & for loops */
 const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
