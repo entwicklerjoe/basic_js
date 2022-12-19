@@ -139,14 +139,16 @@ function sum(arr, n) {
 // document.write(carObj.hasOwnProperty("type"));
 function addYourCar(object, property, value) {
     if (object.hasOwnProperty(property) && value != "") {
-        document.write("Fun");
+        object[property] = value;
     } else if (object.hasOwnProperty(property) != property && value != "") {
-        document.write("Not fun");
-    } else (value === "" || property === "") 
-        return "Not valid";
-    
+        let xProp = property;
+        object[xProp] = value;
+    } else if (value === "" || property === "") {
+        return alert("Not valid");
+    }
 }
-document.write(addYourCar(carObj, "", ""));
+addYourCar(carObj, "ps", "65");
+document.write(carObj.ps);
 
 /* Testing while & for loops */
 const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
