@@ -93,6 +93,8 @@ for (let i = 0; i < testArr.length; i++) {
     total += testArr[i];
 }
 // document.write(total);
+
+/* Nested for loops */
 const arr = [[1, 2], [3, 4], [5, 6]];
 function multiplyAll(arr) {
     let totalArr = 1;
@@ -103,8 +105,18 @@ function multiplyAll(arr) {
     }
     return totalArr;
 };
+// document.write(multiplyAll(arr));
 
-document.write(multiplyAll(arr));
+/* Do...while loop */
+const myNumber = [];
+let s = 5;
+do {
+    myNumber.push(s);
+    s++;
+} while (s < 20);
+// document.write(myNumber);
+
+/*  */
 
 /* Testing while & for loops */
 const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
