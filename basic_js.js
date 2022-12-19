@@ -116,7 +116,17 @@ do {
 } while (s < 20);
 // document.write(myNumber);
 
-/*  */
+/* Recursive functions */
+const sumArr = [1, 2, 3, 4, 5];
+function sum(arr, n) {
+    if (n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n-1];
+    }
+  };
+//   document.write(sum(sumArr, 3));
+
 
 /* Testing while & for loops */
 const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
