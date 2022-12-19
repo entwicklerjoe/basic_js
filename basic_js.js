@@ -4,11 +4,11 @@
 const nameArray = ["Joe", "Ben", "Sarah", "Jennifer"];
 const carObj = { type: "Fiat", model: "500", color: "white" };
 const tier = {
-    1: {min: 1, avg: 10, max: 20},
-    2: {min: 21, avg: 30, max: 40},
-    3: {min: 41, avg: 50, max: 60},
-    4: {min: 61, avg: 70, max: 80},
-    5: {min: 81, avg: 90, max: 99}
+    1: { min: 1, avg: 10, max: 20 },
+    2: { min: 21, avg: 30, max: 40 },
+    3: { min: 41, avg: 50, max: 60 },
+    4: { min: 61, avg: 70, max: 80 },
+    5: { min: 81, avg: 90, max: 99 }
 };
 // document.write(carObj.type, carObj.model, carObj.color);
 
@@ -42,7 +42,18 @@ function nFunction(p1, p2) {
 // document.write(nFunction(2, "money"));
 
 /* If...else & switch */
-
+function addYourCar(object, property, value) {
+    if (object.hasOwnProperty(property) && value != "") {
+        object[property] = value;
+    } else if (object.hasOwnProperty(property) != property && value != "") {
+        let xProp = property;
+        object[xProp] = value;
+    } else if (value === "" || property === "") {
+        return alert("You need add some property and value!");
+    }
+}
+addYourCar(carObj, "ps", "65");
+// document.write(carObj.ps);
 
 /* Check Object Function */
 function checkObj(object, property) {
@@ -120,36 +131,11 @@ do {
 const sumArr = [1, 2, 3, 4, 5];
 function sum(arr, n) {
     if (n <= 0) {
-      return 0;
+        return 0;
     } else {
-      return sum(arr, n - 1) + arr[n-1];
+        return sum(arr, n - 1) + arr[n - 1];
     }
-  };
+};
 //   document.write(sum(sumArr, 3));
 
 /* Loop & function */
-// function checkObj(object, property) {
-//     if (object.hasOwnProperty(property)) {
-//         return object[property];
-//     } else {
-//         return "Property not found";
-//     }
-// };
-// const carObj = { type: "Fiat", model: "500", color: "white" };
-// document.write(carObj.hasOwnProperty("type"));
-function addYourCar(object, property, value) {
-    if (object.hasOwnProperty(property) && value != "") {
-        object[property] = value;
-    } else if (object.hasOwnProperty(property) != property && value != "") {
-        let xProp = property;
-        object[xProp] = value;
-    } else if (value === "" || property === "") {
-        return alert("Not valid");
-    }
-}
-addYourCar(carObj, "ps", "65");
-document.write(carObj.ps);
-
-/* Testing while & for loops */
-const numberArray = [1, 3, 5, 7, 9, [2, 4, 6, 8, 10], [0]];
-
