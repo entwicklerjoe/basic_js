@@ -158,4 +158,17 @@ function rndRange(xMin, yMax ) {
     let result = Math.floor(Math.random() * (yMax - xMin + 1)) + xMin;
     return result;
 }
-document.write(rndRange(2, 12));
+// document.write(rndRange(2, 12));
+
+/* parseInt & parseFloat */
+function convertToInt(str, rdx) {
+    let result = parseInt(str, rdx);
+    return result;    
+}
+// document.write(convertToInt(3900, 16));
+function convertToFloat(str) {
+    let result = parseFloat(str);
+    return result;
+}
+// document.write(convertToFloat(3900));
+
