@@ -151,4 +151,11 @@ function rndWholeNum() {
     let x = Math.floor(Math.random() * 10);
     return x;
 }
-document.write(rndWholeNum());
+// document.write(rndWholeNum());
+
+/* Math.random & Math.floor with Function(par1, par2) */
+function rndRange(xMin, yMax ) {
+    let result = Math.floor(Math.random() * (yMax - xMin + 1)) + xMin;
+    return result;
+}
+document.write(rndRange(2, 12));
