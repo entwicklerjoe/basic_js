@@ -144,4 +144,11 @@ let alphabet = [];
 for (let i = 97; i <= 122; i++) {
     alphabet.push(String.fromCharCode(i));
 }
-document.write(alphabet);
+// document.write(alphabet);
+
+/* Math.random & Math.floor */
+function rndWholeNum() {
+    let x = Math.floor(Math.random() * 10);
+    return x;
+}
+document.write(rndWholeNum());
