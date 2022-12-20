@@ -141,7 +141,7 @@ function sum(arr, n) {
 /* Loop & function */
 const loopCount = null;
 let alphabet = [];
-for (let i = "a"; i <= "z"; i++) {
-    alphabet.push(i);
+for (let i = 97; i <= 122; i++) {
+    alphabet.push(String.fromCharCode(i));
 }
 document.write(alphabet);
