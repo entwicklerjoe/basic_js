@@ -172,3 +172,13 @@ function convertToFloat(str) {
 }
 // document.write(convertToFloat(3900));
 
+/* Ternary Operators */
+function checkParameters(x, y, z) {
+    return (x, y, z === 0) ? "Zero"
+        : (x, y, z > 0) ? "Positive"
+        : (x, y, z < 0) ? "Negative"
+        : (x > y > z) ? "Greater"   //test
+        : (x < y < z) ? "Lesser"    //test
+        : "Fatal error";            //test
+}
+// document.write(checkParameters(6, 4, 2));
