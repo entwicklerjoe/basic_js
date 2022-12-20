@@ -127,7 +127,7 @@ do {
 } while (s < 20);
 // document.write(myNumber);
 
-/* Recursive functions */
+/* Recursive functions v1 */
 const sumArr = [1, 2, 3, 4, 5];
 function sum(arr, n) {
     if (n <= 0) {
@@ -182,3 +182,16 @@ function checkParameters(x, y, z) {
         : "Fatal error";            //test
 }
 // document.write(checkParameters(6, 4, 2));
+
+/* Recursion function v2 */
+function countup(n) {
+    if (n < 1) {
+      return [];
+    } else {
+      const countArray = countup(n - 1);
+      countArray.push(n);
+      return countArray;
+    }
+  }
+//   document.write(countup(5));
+
