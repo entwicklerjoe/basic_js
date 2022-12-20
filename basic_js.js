@@ -184,14 +184,25 @@ function checkParameters(x, y, z) {
 // document.write(checkParameters(6, 4, 2));
 
 /* Recursion function v2 */
-function countup(n) {
+function countUp(n) {
     if (n < 1) {
       return [];
     } else {
-      const countArray = countup(n - 1);
+      const countArray = countUp(n - 1);
       countArray.push(n);
       return countArray;
     }
   }
-//   document.write(countup(5));
-
+//   document.write(countUp(5));
+function rangeOfNumbers(startNum, endNum) {
+    let alpha = parseInt(startNum),
+        omega = parseInt(endNum);
+    if (omega < alpha) {
+      return [];
+    } else {
+      let i = rangeOfNumbers(alpha, omega - 1);
+      i.push(omega);
+      return i;
+    }
+  }
+  document.write(rangeOfNumbers(2, 6.2));
