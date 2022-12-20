@@ -139,3 +139,9 @@ function sum(arr, n) {
 //   document.write(sum(sumArr, 3));
 
 /* Loop & function */
+const loopCount = null;
+let alphabet = [];
+for (let i = "a"; i <= "z"; i++) {
+    alphabet.push(i);
+}
+document.write(alphabet);
