@@ -205,4 +205,4 @@ function rangeOfNumbers(startNum, endNum) {
       return i;
     }
   }
-  document.write(rangeOfNumbers(2, 6.2));
+//   document.write(rangeOfNumbers(2, 6.2));
