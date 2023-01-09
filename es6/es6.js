@@ -28,3 +28,8 @@ carObj.type = "Audi";
 const howMany = (...args) => "You have passed " + args.length + " arguments.";
 // document.write(howMany(0, 2, 3, "bye", [5, 6, 7], {}));
 
+/* Spread operator */
+const nameArray = ["Joe", "Ben", "Sarah", "Jennifer"];
+let nameArrayCopy = [...nameArray];
+// document.write(nameArrayCopy);
+
