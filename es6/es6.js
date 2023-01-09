@@ -45,4 +45,5 @@ let nameArrayCopy = [...nameArray];
 /* Destructuring Assignment */
 const {type, model} = carObj;
 // document.write(type);
-
+const {type: carType, model: carModel} = carObj;
+document.write(carModel);
