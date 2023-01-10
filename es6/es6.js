@@ -46,4 +46,7 @@ let nameArrayCopy = [...nameArray];
 const {type, model} = carObj;
 // document.write(type);
 const {type: carType, model: carModel} = carObj;
-document.write(carModel);
+// document.write(carModel);
+const [a,,b,,c] = nameArray;
+// document.write(a, b, c);
+
